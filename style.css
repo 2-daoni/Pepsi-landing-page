@@ -24,6 +24,7 @@ section {
   transition: 0.5s;
 }
 
+/* -----------header 영역-------------- */
 header {
   position: absolute;
   top: 0;
@@ -62,4 +63,65 @@ header ul li a {
 header ul li a:hover {
   transform: translateY(-10px);
   transition: 0.5s;
+}
+
+/* -------------content 영역------------- */
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+}
+
+.content .textBox h2 {
+  color: var(--white-color);
+  font-size: 4em;
+  line-height: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.content .textBox span {
+  font-size: 2em;
+}
+
+.content .textBox p {
+  color: var(--white-color);
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: var(--white-color);
+  color: black;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.content .textBox a:hover {
+  letter-spacing: 3px;
+  transform: translateX(10px);
+  transition: 0.5s;
+}
+
+.content .imgBox {
+  width: 600px;
+  display: flex;
+  padding-right: 50px;
+  margin-top: 50px;
+  justify-content: flex-end;
+}
+
+.content .textBox img {
+  max-width: 260px;
 }
